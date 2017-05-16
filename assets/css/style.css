@@ -11535,7 +11535,7 @@ a:hove {
     transform: scale(1.2);
   }
   .main_vdh .menu-left .navigation ul li.uk-active a {
-    color: #fff;
+    color: #cf000f;
     text-shadow: 0 0 10px #113c02;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -11580,7 +11580,7 @@ a:hove {
     bottom: 0;
     opacity: 1;
     z-index: 1;
-    left: 30%;
+    left: 35%;
   }
   .main_vdh .subscribe-icon a {
     width: auto;
@@ -11850,7 +11850,7 @@ a:hove {
     height: 100%;
   }
   .news-relate ul li .news-realte-right {
-    width: 62%;
+    width: 60%;
     float: left;
     height: 100%;
     padding-left: 10px;
