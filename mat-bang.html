@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Paragon Hà Nội | QueenLand.vn</title>
+	<title>Paragon Hà Nội | Mặt bằng| QueenLand.vn</title>
 	<link rel="shortcut icon" href="assets/ico/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon.png">
 
@@ -80,6 +80,7 @@
 	<main id="main">
 	<div class="uk-container uk-container-center main_vdh">
 	<!-- Desktop -->
+	<div class="desktop">
 	<!-- slide show -->
 		<div class="menu-left">
 			<div class="logo uk-text-center"><a href="./"><img src="assets/images/logo.png"></a></div>
@@ -103,46 +104,60 @@
 				<div class="uk-panel text">© 2016 Copyright by Hanoi Paragon | Queenland.vn</div>
 			</div>
 		</div>
-		<div class="slideshow">
-			<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
-	            <ul class="uk-slideshow" data-uk-slideshow="{kenburns:true}">
-	                <li data-slideshow-slide="img"><img src="samples/banner.jpg"></li>
-	                <li data-slideshow-slide="img"><img src="samples/tien-ich-01.jpg"></li>
-	                <li data-slideshow-slide="img"><img src="samples/tien-ich-02.jpg"></li>
-	            </ul>
-	            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
-		        <li data-uk-slideshow-item="0"><a href=""></a></li>
-		        <li data-uk-slideshow-item="1"><a href=""></a></li>
-		        <li data-uk-slideshow-item="2"><a href=""></a></li>
-		    </ul>
-	        </div>
+		<div class="list-tab mat-bang">
+			<ul class="can-ho" data-uk-switcher="{connect:'#id-can-ho'}">
+			    <li class="uk-active" aria-expanded="true"><a href=""> Căn Hộ Loại A</a></li>
+			    <li><a href=""> Căn Hộ Loại B</a></li>
+			    <li><a href=""> Căn Hộ Loại C</a></li>
+			    <li><a href=""> Căn Hộ Loại D</a></li>
+			</ul>
+			<ul id="id-can-ho" class="uk-switcher room-tower">
+			    <li class="uk-active uk-animation-slide-right">
+			    	<ul class="child-room-tower"> 
+			    		<div class="image-mb">
+			    			<img src="samples/mat-bang/Tuvan_Paragon-03.png" alt="">
+			    		</div>
+			    	</ul>
+				    
+			    </li>
+			    <li class="">
+				    <ul class="child-room-tower uk-animation-slide-right">
+			    		<div class="image-mb">
+			    			<img src="samples/mat-bang/Tuvan_Paragon-06.png" alt="">
+			    		</div>
+			    	</ul>
+			    </li>
+			    <li class="">
+				    <ul class="child-room-tower uk-animation-slide-right">
+			    		<div class="image-mb">
+			    			<img src="samples/mat-bang/Tuvan_Paragon-04.png" alt="">
+			    		</div>
+			    	</ul>
+			    </li>
+			    <li class="">
+				    <ul class="child-room-tower uk-animation-slide-right">
+			    		<div class="image-mb">
+			    			<img src="samples/mat-bang/Tuvan_Paragon-05.png" alt="">
+			    		</div>
+			    	</ul>
+			    </li>
+			</ul>
+
+			<!-- news detail seo -->
 		</div>
 		<!-- hot new -->
-		<div class="hot-news uk-animation-slide-right">
-			<!-- <div class="news">
-				<a href=""><img class="uk-border-circle" src="samples/video.png"></a>
-				<div class="item-news">
-					<h2>Tin mới</h2>
-					<a href="#"> Đợt mở bán đầu tiên Paragon Hà Nội</a>
-				 </div>
-			</div> -->
-			<div class="pound video">
-				<a href=""><span class="player"></span><img class="uk-border-circle" src="samples/video.png"></a>
-				<span class="name">video dự án</span>
-			</div>
-		</div>
 		<!-- tel me -->
 		<div class="hotline uk-animation-slide-bottom">
 			<ul class="uk-nav uk-text-center"> <li><a href="tel:0912889138"> <i class="uk-icon-phone uk-animation-fade uk-animation-scale-up"></i>0912 889 138</a></li></ul>
 		</div>
 		<!-- subscribe-icon -->
-		<div class="subscribe-icon uk-animation-slide-bottom">
+		<div class="subscribe-icon">
 			<span class="subcribe"></span>
 			<a href="#my-id-form" data-uk-modal>Đăng Ký Nhận Tin</a>
 		</div>
 		<!-- This is the modal -->
 		<div id="my-id-form" class="uk-modal">
-		    <div class="uk-modal-dialog form-summit uk-modal-dialog-lightbox	">
+		    <div class="uk-modal-dialog form-summit uk-modal-dialog-lightbox">
 		        <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
 		        <div class=" title uk-text-center"> Đăng Ký Nhận Thông Tin</div>
 		        <form class="uk-form">
@@ -167,35 +182,17 @@
 		        </form>
 		    </div>
 		</div>
+		</div>
 		<!-- modal -->
-			<div id="my-id-position" class="uk-modal">
-			    <div class="uk-modal-dialog uk-modal-dialog-lightbox">
-			        <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
-			        <img src="samples/vi-tri.jpg" alt=" Vị trí">
-			    </div>
-			</div>
+		<div id="my-id-position" class="uk-modal">
+		    <div class="uk-modal-dialog uk-modal-dialog-lightbox">
+		        <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+		        <img src="samples/vi-tri.jpg" alt=" Vị trí">
+		    </div>
+		</div>
 		<!-- end desktop -->
 		<div class="mobile-table">
 			<!-- Mobile -->
-			<div class="uitility">
-				<div class="uk-panel">
-					<div class="title uk-text-center"> Paragon Hà Nội</div>
-					<div class="description uk-text-center">
-						Dự án PARAGON HÀ NỘI sở hữu một vị trí trung tâm khu vực quận Cầu Giấy, nơi tiếp giáp với hàng loạt các tuyến đường huyết mạch của khu vực phía Tây Hà Nội như: Phạm Hùng, Xuận Thủy, Duy Tân, Phạm Văn Đồng, Cầu Giấy.
-					</div>
-					<div class="view"> <a href="#">Tiện ích dự án</a></div>
-				</div>
-			</div>
-			<div class="position">
-				<a href="#my-id-position" class="zoom" data-uk-modal></a>
-				<img src="samples/vi-tri.jpg">
-			</div>
-			<div class="title"> Thông tin căn hộ</div>
-			<div class="info-shophouse">
-				<div class="description"> <p>Các căn hộ PARAGON có thiết kế hiện tại diện tích từ 88 m2 - 130m2. Hệ thống cây xanh bao quanh, trung tâm thương mại cao cấp, nằm gần các bệnh viện lớn như: Viện huyết học, Bệnh viện 198, Bệnh viện y học cổ truyền, Viện E, Bệnh viện thể thao.</p></div>
-				<img src="samples/banner.jpg">
-				<div class="view uiti"> <a href="#">Thông tin căn hộ</a></div>
-			</div>
 			<!-- download info -->
 			<div class="download-info">
 				<ul class="uk-nav">
@@ -209,34 +206,34 @@
 			<div class="news uk-grid uk-grid-small uk-grid-width-1-1 uk-grid-width-medium-1-2">
 				<div class=" item-news ">
 					<div class="news-img">
-						<a href="news.html"><img class="uk-border-rounded" src="samples/tien-ich-02.jpg"></a>
+						<a href=""><img class="uk-border-rounded" src="samples/tien-ich-02.jpg"></a>
 					</div>
 					<div class="desc">
-						<a href="news.html">Đợt mở bán đầu tiên paragon hà nội</a>
+						<a href="">Đợt mở bán đầu tiên paragon hà nội</a>
 					</div>
 				</div>
 				<div class=" item-news ">
 					<div class="news-img">
-						<a href="news.html"><img class="uk-border-rounded" src="samples/tien-ich-02.jpg"></a>
+						<a href=""><img class="uk-border-rounded" src="samples/tien-ich-02.jpg"></a>
 					</div>
 					<div class="desc">
-						<a href="news.html">Đợt mở bán đầu tiên paragon hà nội</a>
+						<a href="">Đợt mở bán đầu tiên paragon hà nội</a>
 					</div>
 				</div>
 				<div class=" item-news ">
 					<div class="news-img">
-						<a href="news.html"><img class="uk-border-rounded" src="samples/tien-ich-02.jpg"></a>
+						<a href=""><img class="uk-border-rounded" src="samples/tien-ich-02.jpg"></a>
 					</div>
 					<div class="desc">
-						<a href="news.html">Đợt mở bán đầu tiên paragon hà nội</a>
+						<a href="">Đợt mở bán đầu tiên paragon hà nội</a>
 					</div>
 				</div>
 				<div class=" item-news ">
 					<div class="news-img">
-						<a href="news.html"><img class="uk-border-rounded" src="samples/tien-ich-02.jpg"></a>
+						<a href=""><img class="uk-border-rounded" src="samples/tien-ich-02.jpg"></a>
 					</div>
 					<div class="desc">
-						<a href="news.html">Đợt mở bán đầu tiên paragon hà nội</a>
+						<a href="">Đợt mở bán đầu tiên paragon hà nội</a>
 					</div>
 				</div>
 			</div>
@@ -245,7 +242,7 @@
 				<div class="footer">
 					<ul class="uk-nav">
 					    <li class="uk-active"><a href="./">Home </a></li>
-					    <li class=""><a href="#my-id-position"  data-uk-modal> Tổng quan</a></li>
+					    <li class=""><a href="#my-id-position"  data-uk-modal> Tổng quang</a></li>
 					    <li class=""><a href="can-ho.html"> Happy Tower</a></li>
 					    <li class=""><a href="can-ho.html"> Elite Tower</a></li>
 					    <li class=""><a href="can-ho.html"> Victory Tower</a></li>
@@ -260,10 +257,13 @@
 				</div>
 			</footer>
 
+
+
+
 			<div class="mobile-bottom">
 				<ul class="uk-nav">
 					<li><a href="tel:0912 889 138"><i class="uk-icon-phone"></i>0912 889 138</a></li>
-					<li><a href="#my-id-form" data-uk-modal> Đăng ký nhận thông tin</a></li>
+					<li><a href="#my-id-form"> Đăng ký nhận thông tin</a></li>
 				</ul>
 			</div>
 		</div>

@@ -207,19 +207,20 @@
     	            width: 100%;
 				    padding: 0;
 				    margin: auto;
-				    text-align: center;
+				    /* text-align: center; */
 				    padding-bottom: 20px;
+				    padding-left: 10px;
 				    li {
 			    	    display: inline-block;
 					    width: auto;
 					    height: 35px;
-					    background-color: #cf000f;
+					    background-color: #4fa74a;
 					    line-height: 3;
 					    padding: 5px;
 					    text-transform: uppercase;
 				    	a {
 				    		color: #ffffff;
-				    		font: 15px 'Roboto Regular';
+				    		font: 12px 'Roboto Medium'; 
 				    		text-decoration: none;
 				    	}
 				    }
@@ -227,7 +228,7 @@
 
 				    }
 				    li:hover, li.uk-active {
-				    	background-color: #4fa74a;
+				    	background-color: #cf000f;
 				    }
 		    	}
 	    }
@@ -310,27 +311,85 @@
 				}
 	    	}
 	    }
+	    // News detail 
+	    .news-detail {
+    	    width: 100%;
+		    min-height: 500px;
+		    text-align: justify;
+	        margin-left: -5px;
+		    .title {
+		    	padding: 10px 0 ;
+		    }
+	    }
+	    // news relate link
+	    .news-relate-link {
+			ul {
+				padding:0;
+				.uk-icon-chevron-right {
+					padding-right: 10px;
+				}
+			}
+			ul li a {
+				padding: 5px 0 5px 0;
+			}
+		}
+		// news ralte detail 
+    .news-relate {
+    	margin-top: 20px;
+    	ul li {
+    		width: 10	0%;
+    		max-height: 100px;
+    		min-height: 70px;
+    		float: left;
+    		margin-bottom: 20px;
+    		.news-realte-left {
+    			width: 35%;
+    			float: left;
+    			height: 100%;
+    		}
+    		.news-realte-right {
+    			width: 60%;
+    			float: left;
+    			height: 100%;
+    			padding-left: 10px;
+    			margin-top: 5px;
+    			a {
+    				color: #000;
+    				font: 15px 'Roboto Medium';
+    			}
+    		}
+    	}
+    }
+    &.right {
+    	ul li {
+    		width: 100%;
+    	}
+    }
 	// end can ho
 	.mobile-bottom {
 		position: fixed;
 	    bottom: 0%;
-	    background-color: #cf000f;
+	    background-color: #951e20;
 	    height: 40px;
 	    width: 100%;
 	    left: 0;
 	    ul li {
 	    	display: block;
 	    	float: left;
-	    	width: 49%;
+	    	width: 45%;
 	    	a {
     		    color: #ffffff;
-			    font: 14px 'Roboto Regular';
+			    font: 16px 'Roboto Regular';
 			    padding: 5px 10px;
+			    line-height: 2;
 			    text-transform: uppercase;
 	    		.uk-icon-phone {
 	    			padding-right: 10px;
 	    		}
 	    	}
+	    }
+	    ul li + li {
+	    	width: 55%;
 	    }
 	}
 
@@ -468,6 +527,8 @@
 		.right-content {
 		    .title {
 		    	margin-bottom: 20px;
+		    	font: 24px 'Roboto Bold';
+		    	padding: 10px 0;
 		    }
 	    }
 		.news {
@@ -496,6 +557,7 @@
 				}
 			}
 		}
+
 	}
 	.mobile-bottom {
 		position: fixed;
@@ -527,8 +589,11 @@
 
 /* Medium devices (desktops, 960px and up) */
 @media (min-width: @breakpoint-large) {
-
-
+	.header-top {
+	    min-height: 200px;
+	    background-size: 100%;
+	}
+ 
 	//---------------------------------------------
 	// Hook Mixins Render
 	.hook-min-width-large;
@@ -541,7 +606,7 @@
 		display: none;
 	}
 	.logo {
-		margin-right: 60px;
+		// margin-right: 60px;
 	}
 	#header {
 		display: none;
@@ -583,7 +648,7 @@
 			position: absolute;
 			width: 15%;
 			height: 100%;
-			background-color: rgba(224, 222, 221, 0.35);
+		    background-color: rgba(0, 0, 0, 0.67);
 			z-index: 1;
 			.navigation {
 				margin-top: 20px;
@@ -595,7 +660,7 @@
 				    font-weight: 400;
 				    font: 18px 'Roboto Bold';
 				    line-height: 32px;
-				    color: #000;
+				    color: #ffffff;
 				    -webkit-transition: all .3s ease-in-out;
 				    -moz-transition: all .3s ease-in-out;
 				    -o-transition: all .3s ease-in-out;
@@ -780,7 +845,7 @@
 	    }
 
 
-}
+} 
 	    .list-tab{
 	    	    position: absolute;
 			    padding-top: 30px;
@@ -791,6 +856,7 @@
 			    top: 10px;
 			    width: 90%;
 			    padding-bottom: 50px;
+			    background: url(samples/mat-bang.jpeg) no-repeat;
 		    ul.can-ho {
     	        right: 16%;
 			    width: 100%;
@@ -799,7 +865,7 @@
 			    	    display: inline-block;
 					    width: auto;
 					    height: 35px;
-					    background-color: #cf000f;
+					    background-color: #4fa74a;
 					    line-height: 3;
 					    padding: 5px;
 					    text-transform: uppercase;
@@ -813,10 +879,12 @@
 
 				    }
 				    li:hover, li.uk-active {
-				    	background-color: #4fa74a;
+				    	background-color: #cf000f;
 				    }
 		    	}
+		    
 	    }
+
 	    // tower
 	    .room-tower {
 	    	.child-room-tower {
@@ -858,6 +926,9 @@
 	    				} 
 	    		}
 	    	}
+	    	.image-mb {
+	    		width: 65%;
+	    	}
 	    }
 
 	    // news
@@ -868,7 +939,7 @@
 		    width: 88%;
 		    overflow-y: scroll;
 		    min-height: 300px;
-		    height: 590px;
+	        height: 740px;
 		    .title {
 		    	margin-bottom: 20px;
 		    }
@@ -904,6 +975,83 @@
 				}
 	    	}
 	    }
+    // News detail 
+    .news-detail {
+    	width: 90%;
+	    min-height: 500px;
+	    .news-detail-left {
+    	    width: 70%;
+		    float: left;
+		    overflow-y: scroll;
+		    height: 760px;
+		    margin-bottom: 50px;
+	        padding-right: 10px;
+		    p {
+	    	    font: 14px 'Roboto Regular';
+			    line-height: 1.5;
+		    }
+		    .data-time {
+		    	font: 15px 'Roboto Italic';
+		    }
+	    }
+	    .news-detail-right {
+	    	width: 30%;
+	    	float: left;
+	    }
+    }
+    // news ralte detail 
+    .news-relate {
+    	margin-top: 20px;
+    	ul li {
+    		width: 50%;
+    		max-height: 100px;
+    		min-height: 70px;
+    		float: left;
+    		margin-bottom: 20px;
+    		.news-realte-left {
+    			width: 35%;
+    			float: left;
+    			height: 100%;
+    		}
+    		.news-realte-right {
+    			width: 62%;
+    			float: left;
+    			height: 100%;
+    			padding-left: 10px;
+    			margin-top: 5px;
+    			a {
+    				color: #000;
+    				font: 15px 'Roboto Medium';
+    			}
+    		}
+    	}
+    }
+    &.right {
+    	ul li {
+    		width: 100%;
+    	}
+    }
+
+    // news relate link
+    .news-relate-link {
+		ul {
+			padding:0;
+			.uk-icon-chevron-right {
+				padding-right: 10px;
+			}
+		}
+		ul li a {
+			padding: 5px 0 5px 0;
+		}
+	}
+
+	// CONTACT 
+	.contact {
+		background: url(samples/banner.peg) no-repeat;
+		background-size: 100%;
+		height: 100px; 
+	}
+	
 	//---------------------------------------------
 	// Hook Mixins Render
 	.hook-min-width-xlarge;
